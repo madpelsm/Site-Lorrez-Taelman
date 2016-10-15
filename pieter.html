@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+<title>Dierenartsenpraktijk Lorrez-Taelman voor huisdieren en vee, te Ronse</title>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Dierenartsen Annick Lorrez en Pieter Taelman delen een passie voor dieren en runnen een eerste-lijnspraktijk te Ronse voor gezelschapsdieren, rundvee, kleinvee en paarden, Sedert 1992. "/>
+<meta name="keywords" content="dierenarts, praktijk, ronse, renaix,veterinaire, huisdieren, annick,lorrez,pieter,taelman,camille,lemonnier,kleinvee, grootvee, vee, dieren, arts "/>
+<link rel="icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="css/styles3.css"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src='jquery.js'></script>
+</head>
+<body id="body">
+    <span id='switchLang'>
+    FR/NL</span>
+<div id="container">
+	<div id="nav">
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./annick.html">Annick Lorrez</a></li>
+			<li><a href="./pieter.html"class="active">Pieter Taelman</a></li>
+			<li><a href="./contact.html" >contact</a></li>
+		</ul>
+	</div>
+	<img id="logo" src="css/Logo.jpg" />
+	<div id="header">
+		<h1>Pieter Taelman</h1>
+		
+	</div>
+	<div class="wrapper">
+	<div class="halfpage" id="about">
+	<h2>Pieter Taelman</h2><div class="lijntje" style="margin-bottom:1em;"></div>
+	<p id='overPieter'>In 1991 behaalde ik samen met mijn vrouw het diploma van doctor in de Diergeneeskunde. Wij vestigden ons in Ronse, waar ik een zelfstandige praktijk begon voor landbouwhuisdieren en paarden. Na een loopbaan van 25 jaar, besloot ik een punt te zetten achter het beroep van practicus en werd in 2016 Technical Consultant Ruminants bij Elanco.</p>
+	</div>
+	<div class="halfpage"><img id="profile" src="css/Pieter2.jpg"/></div>
+		
+		<div class="halfpage" style="text-align:left;">
+			<h2 id='contactMe'>Mij contacteren</h2>
+			<dt id='adres'>adres</dt>
+			<dd id='straat'>Camille Lemonierlaan &bull; 59 &bull; 9600 Ronse</dd><br/>
+			<dt>Tel.</dt><dd> 055 20 70 80</dd>
+			
+			<div class="button"><a href="mailto:pieter.taelman@skynet.be"/>Send an email</a></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="footer">created by Mathias De Pelsmaeker &bull; 2016</div>
+</body>
+<script>
+    var overPieter = 'Je suis vétérinaire agréé depuis 1991. Ma femme et moi ont commencé une pratique vétérinaire en 1992 à Renaix. Depuis 25 ans je me suis occupé des animaux rurales et des chevaux. En octobre 2016 j’ai quitté la pratique et ma profession actuelle c’est Technical Consultant Ruminants chez Elanco.';
+    var contactMe = 'Détails de contact ';
+    var straat = 'Bvd Camille Lemonnier &bull; 59 &bull; 9600 Renaix';
+    var adres = 'Adresse ';
+    
+    $('#switchLang').on('click',switchLang);
+    function switchLang(){
+        var overPieterTemp = $('#overPieter').html();
+        var contactMeTemp = $('#contactMe').html();
+        var straatTemp = $('#straat').html();
+        var adresTemp = $('#adres').html();
+        $('#overPieter').html(overPieter);
+        $('#contactMe').html(contactMe);
+        $('#straat').html(straat);
+        $('#adres').html(adres);
+        adres=adresTemp;
+        straat=straatTemp;
+        contactMe=contactMeTemp;
+        overPieter=overPieterTemp;
+    }
+</script>
+</html>

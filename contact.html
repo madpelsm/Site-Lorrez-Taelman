@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+<title>Dierenartsenpraktijk Lorrez-Taelman voor huisdieren en vee, te Ronse</title>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Dierenartsen Annick Lorrez en Pieter Taelman delen een passie voor dieren en runnen een eerste-lijnspraktijk te Ronse voor gezelschapsdieren, rundvee, kleinvee en paarden, Sedert 1992. "/>
+<meta name="keywords" content="dierenarts, praktijk, ronse, renaix,veterinaire, huisdieren, annick,lorrez,pieter,taelman,camille,lemonnier,kleinvee, grootvee, vee, dieren, arts "/>
+<link rel="icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="css/styles3.css"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src='jquery.js'></script>
+</head>
+<body id="body">
+    <span id='switchLang'>
+    FR/NL</span>  
+<div id="container">
+	<div id="nav">
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./annick.html">Annick Lorrez</a></li>
+			<li><a href="./pieter.html">Pieter Taelman</a></li>
+			<li><a href="./contact.html"class="active" >contact</a></li>
+		</ul>
+	</div>
+	<img id="logo" src="css/Logo.jpg" />
+	<div id="header">
+		<h1>Contact</h1>
+		
+	</div>
+	<div class="wrapper">
+	<div class="halfpage" id="about">
+	<h2 id='onsContacteren'>Ons contacteren?</h2><div class="lijntje" style="margin-bottom:1em;"></div>
+	<p id='verderop'>Verderop vind je alvast een foto van de praktijk. Hieronder vind je de locatie op Google Maps. <br/> Camille Lemonierlaan 59 te Ronse</p>
+	<div style="display:block;align-text:center;float:center; margin-left:7%;margin-right:7%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.243494496093!2d3.5933262159849564!3d50.73397257477557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c31b33432aed05%3A0x136716d21f92b3de!2sAnnick+%2F+Lorrez!5e0!3m2!1snl!2sbe!4v1472060738843" width="98%" height="25%" frameborder="0" style="border:0;" allowfullscreen></iframe>
+	</div></div>
+	<div class="halfpage"><img id="profile" src="css/Huis2.jpg"/></div>
+		
+		<div class="Contact">
+			<h1 id='stuurMailtje'>Stuur een mailtje!</h1>
+			<p id='vulIn'> Vul het onderstaande formulier in en we zullen zo snel mogelijk met jou contact opnemen!</p>
+			<form class="form" action="https://formspree.io/annick.lorrez@skynet.be" method="POST">
+			<input type="text" name="_gotcha" style="display:none" />
+			<h2 id='naam'>Jouw naam</h2>
+			<input type="text" name="naam" id="naam">
+			<h2 id='mail'>Jouw e-mailadres</h2>
+			<input type="email" name="_replyto"/>
+			<h2 id='bericht'>Jouw bericht</h2>
+			<textarea name="contents" ></textarea>
+			<input type="hidden" name="_subject" value="Nieuw bericht van op jouw site!"/>
+			<br/>
+			<input type="hidden" name="_next" value="./thanks.html"/>
+			<input type="submit" value="Send"/>
+			</form>
+			
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="footer">created by Mathias De Pelsmaeker &bull; 2016</div>
+</body>
+    <script>
+
+        var onsContacteren='Comment nous contacter ?', verderop='A côté vous trouverez l’image de la pratique. Ci-dessous vous pouvez nous retrouver sur Google Maps. </br>Bvd Camille Lemonnier 59, 9600 Renaix.', stuurMailtje='Envoyez-nous un email!',vulIn='Remplissez le formulaire ci-dessous et nous prendrons contact le plus vite possible!',naam='Votre nom',mail='votre email',bericht='votre message';
+        $('#switchLang').on('click',switchLang);
+        function switchLang(){
+            var onsContacterenTemp=$('#onsContacteren').html(),veredopTemp=$('#verderop').html(),stuurMailtjeTemp=$('#stuurMailtje').html(),vulInTemp=$('#vulIn').html(),naamTemp=$('#naam').html(),mailTemp=$('#mail').html(),berichtTemp=$('#bericht').html();
+            $('#onsContacteren').html(onsContacteren);
+            $('#verderop').html(verderop);
+            $('#stuurMailtje').html(stuurMailtje);
+            $('#vulIn').html(vulIn);
+            $('#naam').html(naam);
+            $('#mail').html(mail);
+            $('#bericht').html(bericht);
+            onsContacteren=onsContacterenTemp;
+            verderop=veredopTemp;
+            stuurMailtje=stuurMailtjeTemp;
+            vulIn=vulInTemp;
+            naam=naamTemp;
+            mail=mailTemp;
+            bericht=berichtTemp;
+        }
+    </script>
+</html>

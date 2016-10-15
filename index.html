@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+<title>Dierenartsenpraktijk Lorrez-Taelman voor huisdieren en vee, te Ronse</title>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Dierenartsen Annick Lorrez en Pieter Taelman delen een passie voor dieren en runnen een eerste-lijnspraktijk te Ronse voor gezelschapsdieren, rundvee, kleinvee en paarden, Sedert 1992. "/>
+<meta name="keywords" content="dierenarts, praktijk, ronse, renaix,veterinaire, huisdieren, annick,lorrez,pieter,taelman,camille,lemonnier,kleinvee, grootvee, vee, dieren, arts "/>
+<link rel="icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="css/styles3.css"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src='jquery.js'></script>
+</head>
+<body id="body">
+    <span id='switchLang'>
+    FR/NL</span>    
+<div id="container">
+	<div id="nav">
+		<ul>
+			<li><a href="./index.html"class="active" >Home</a></li>
+			<li><a href="./annick.html">Annick Lorrez</a></li>
+			<li><a href="./pieter.html">Pieter Taelman</a></li>
+			<li><a href="./contact.html">contact</a></li>
+		</ul>
+	</div>
+	<img id="logo" src="css/Logo.jpg" />
+	<div id="header">
+        <h1 id='WelkomTitel'>Annick Lorrez-Pieter Taelman </br>Dierenartsenpraktijk</h1>
+		<p id='welkom'>Welkom op onze website! Wij zijn Annick Lorrez en Pieter Taelman, dierenartsen te Ronse sedert 1992. Klik gerust door naar elk van onze pagina's voor meer informatie.</p>
+	</div>
+	
+	<div class="clear"></div>
+</div>
+<div class="footer">created by Mathias De Pelsmaeker &bull; 2016</div>
+</body>
+    <script>
+        var WelkomTitel = 'Annick Lorrez-Pieter Taelman </br> Vétérinaires';
+        var welkom = 'Bienvenu sur notre site! Depuis 1992 nous travaillons dans une pratique vétérinaire à Renaix. Si vous voulez plus d’information, n’hésitez-pas à consulter les autres pages.';
+
+        $('#switchLang').on('click',switchLang);
+        function switchLang(){
+            var welkomTitelTemp = $('#WelkomTitel').html();
+            var welkomTemp = $('#welkom').html();
+            $('#welkom').html(welkom);
+            $('#WelkomTitel').html(WelkomTitel);
+            WelkomTitel=welkomTitelTemp;
+            welkom=welkomTemp;
+        }
+    </script>
+</html>

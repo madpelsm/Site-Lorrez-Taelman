@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+<title>Dierenartsenpraktijk Lorrez-Taelman voor huisdieren en vee, te Ronse</title>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Dierenartsen Annick Lorrez en Pieter Taelman delen een passie voor dieren en runnen een eerste-lijnspraktijk te Ronse voor gezelschapsdieren, rundvee, kleinvee en paarden, Sedert 1992. "/>
+<meta name="keywords" content="dierenarts, praktijk, ronse, renaix,veterinaire, huisdieren, annick,lorrez,pieter,taelman,camille,lemonnier,kleinvee, grootvee, vee, dieren, arts "/>
+<link rel="icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon2.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="css/styles3.css"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src =' jquery.js'></script>
+</head>
+<body id="body">
+    <span id='switchLang'>
+    FR/NL</span>
+<div id="container">
+	<div id="nav">
+		<ul>
+			<li><a href="./index.html" >Home</a></li>
+			<li><a href="./annick.html"class="active">Annick Lorrez</a></li>
+			<li><a href="./pieter.html">Pieter Taelman</a></li>
+			<li><a href="./contact.html">contact</a></li>
+		</ul>
+	</div>
+	<img id="logo" src="css/Logo.jpg" />
+	<div id="header">
+		<h1>Annick Lorrez</h1>
+		
+	</div>
+	<div class="wrapper">
+	<div class="halfpage" id="about">
+	<h2>Annick Lorrez</h2><div class="lijntje" style="margin-bottom:1em;"></div>
+	<p id='aboutText'> In 1991 behaalde ik mijn diploma Diergeneeskunde en ruilde Gent in voor Ronse. Ik startte een kleinehuisdierenpraktijk, waarbij ik vooral honden, katten, vogels en knaagdieren onder mijn patiënten reken. U kan bij mij terecht voor de jaarlijkse controle van uw huisdier, maar ook in geval van ziekte, radiografie, echografie en de courante basis-chirurgie. Meestal werk ik zonder afspraak, zie verder voor de consultatie-uren. Indien u dat wenst, kan u ook een afspraak maken.</p>
+	</div>
+	<div class="halfpage"><img id="profile" src="css/Annick2.jpg"/></div>
+		<div class="halfpage">
+			<h2 id='Consult'>Consultatie-uren</h2>
+			<div style="text-align:justify;">
+			<dt id='ma'>maandag</dt> <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
+			<dt id='di'>dinsdag</dt>  <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
+			<dt id='wo'>woensdag</dt> <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
+			<dt id='do'>donderdag</dt> <dd>17.00 &hyphen; 19.00</dd> <br/>
+			<dt id='vr'>vrijdag</dt> <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
+			<dt id='za'>zaterdag</dt> <dd>10.00 &hyphen; 11.30</dd> <br/>
+			<dt id='zo'>zondag</dt> <dd>&hyphen;</dd> <br/><br/>
+							<dd style="font-weight:300" id='TelAfsp'>Of op afspraak <b>(telefonisch)</b></dd></div>
+							
+							
+		</div>
+		<div class="halfpage" style="text-align:left;">
+			<h2 id='contactGegevens'>Contactgegevens</h2>
+			<dt id='adres'>Adres</dt>
+			<dd id='straat'> Camille Lemonierlaan &bull; 59 &bull; 9600 Ronse</dd><br/>
+			<dt>Tel.</dt> <dd>055 20 70 80</dd> <br/><br/>
+			<div class="button"><a href="mailto:annick.lorrez@skynet.be">Send an email</a></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="footer">created by Mathias De Pelsmaeker &bull; 2016</div>
+</body>
+    <script>
+    var aboutAnick='Depuis 1991 je suis vétérinaire diplômée. D’origine née à Gand, j’ai déménagé à Renaix où j’ai commencé une pratique pour les animaux de compagnie en 1992. Je m’occupe du contrôle annuel de votre animal, mais vous pouvez me contacter aussi en cas de maladie, pour les examens radiographiques et pour la chirurgie de base. La plupart du temps je suis disponible pendant mes heures de consultation; mais si vous la désirez, je peux vous recevoir sur rendez-vous. ';
+        var Ma = 'Lundi';
+        var Di = 'Mardi';
+        var Wo = 'Mercredi';
+        var Do = 'Jeudi';
+        var Vr = 'Vendredi';
+        var Za = 'Samedi';
+        var Zo = 'Dimanche';
+        var telAfsp = 'Ou sur rendez-vous : 055/20 70 80';
+        var consult = 'Heures de consultation ';
+        var contactGeg = 'Détails de contact ';
+        var adres = 'Adresse';
+        var straat = 'Bvd Camille Lemonnier  &bull; 59 &bull; 9600 Renaix';
+        
+        $('#switchLang').on('click',switchLang);
+        function switchLang(){
+            var Temp = $('#aboutText').html();
+            var TempMa = $('#ma').html();
+            var TempDi = $('#di').html();
+            var TempWo = $('#wo').html();
+            var TempDo = $('#do').html();
+            var TempVr = $('#vr').html();
+            var TempZa = $('#za').html();
+            var TempZo = $('#zo').html();
+            var TempTelAfsp = $('#TelAfsp').html();
+            var consultTemp = $('#Consult').html();
+            var contactGegTemp = $('#contactGegevens').html();
+            var adresTemp = $('#adres').html();
+            var straatTemp = $('#straat').html();
+            $('#aboutText').html(aboutAnick);
+            $('#ma').html(Ma);
+            $('#di').html(Di);
+            $('#wo').html(Wo);
+            $('#do').html(Do);
+            $('#vr').html(Vr);
+            $('#za').html(Za);
+            $('#zo').html(Zo);
+            $('#TelAfsp').html(telAfsp);
+            $('#Consult').html(consult);
+            $('#contactGegevens').html(contactGeg);
+            $('#adres').html(adres);
+            $('#straat').html(straat);
+            aboutAnick=Temp;
+            Ma=TempMa;
+            Di=TempDi;
+            Wo=TempWo;
+            Do=TempDo;
+            Vr=TempVr;
+            Za=TempZa;
+            Zo=TempZo;
+            telAfsp=TempTelAfsp;
+            consult=consultTemp;
+            contactGeg=contactGegTemp;
+            straat=straatTemp;
+            adres=adresTemp;
+            
+        }
+    </script>
+</html>
