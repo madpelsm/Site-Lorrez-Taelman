@@ -40,7 +40,7 @@
 			<dt id='ma'>maandag</dt> <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
 			<dt id='di'>dinsdag</dt>  <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
 			<dt id='wo'>woensdag</dt> <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
-			<dt id='do'>donderdag</dt> <dd>17.00 &hyphen; 19.00</dd> <br/>
+			<dt id='do'>donderdag</dt> <dd id='dotext'>op afspraak</dd> <br/>
 			<dt id='vr'>vrijdag</dt> <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
 			<dt id='za'>zaterdag</dt> <dd>10.00 &hyphen; 11.30</dd> <br/>
 			<dt id='zo'>zondag</dt> <dd>&hyphen;</dd> <br/><br/>
@@ -69,6 +69,7 @@
         var Vr = 'Vendredi';
         var Za = 'Samedi';
         var Zo = 'Dimanche';
+        var doText = 'sur rendez-vous';
         var telAfsp = 'Ou sur rendez-vous : 055/20 70 80';
         var consult = 'Heures de consultation ';
         var contactGeg = 'Détails de contact ';
@@ -85,6 +86,7 @@
             var TempVr = $('#vr').html();
             var TempZa = $('#za').html();
             var TempZo = $('#zo').html();
+            var TempDoText = $('#dotext').html();
             var TempTelAfsp = $('#TelAfsp').html();
             var consultTemp = $('#Consult').html();
             var contactGegTemp = $('#contactGegevens').html();
@@ -98,6 +100,7 @@
             $('#vr').html(Vr);
             $('#za').html(Za);
             $('#zo').html(Zo);
+            $('#dotext').html(doText);
             $('#TelAfsp').html(telAfsp);
             $('#Consult').html(consult);
             $('#contactGegevens').html(contactGeg);
@@ -108,6 +111,7 @@
             Di=TempDi;
             Wo=TempWo;
             Do=TempDo;
+            doText=TempDoText;
             Vr=TempVr;
             Za=TempZa;
             Zo=TempZo;
