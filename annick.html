@@ -31,11 +31,11 @@
 	<div class="wrapper">
 	<div class="halfpage" id="about">
 	<h2>Annick Lorrez</h2><div class="lijntje" style="margin-bottom:1em;"></div>
-	<p id='aboutText'> In 1991 behaalde ik mijn diploma Diergeneeskunde en ruilde Gent in voor Ronse. Ik startte een kleinehuisdierenpraktijk, waarbij ik vooral honden, katten, vogels en knaagdieren onder mijn patiënten reken. U kan bij mij terecht voor de jaarlijkse controle van uw huisdier, maar ook in geval van ziekte, radiografie, echografie en de courante basis-chirurgie. Meestal werk ik zonder afspraak, zie verder voor de consultatie-uren. Indien u dat wenst, kan u ook een afspraak maken.</p>
+	<p id='aboutText'> In 1991 behaalde ik mijn diploma Diergeneeskunde en ruilde Gent in voor Ronse. Ik startte een kleine huisdierenpraktijk, waarbij ik vooral honden, katten, vogels en knaagdieren onder mijn patiënten reken. U kan bij mij terecht voor de jaarlijkse controle van uw huisdier, maar ook in geval van ziekte, radiografie, echografie en de courante basis-chirurgie. Ik werk enkel op afspraak. Die kan u telefonisch maken (055/20 70 80) of via e-mail.</p>
 	</div>
 	<div class="halfpage"><img id="profile" src="css/Annick2.jpg"/></div>
-		<div class="halfpage">
-			<h2 id='Consult'>Consultatie-uren</h2>
+		<!--<div class="halfpage">
+        <h2 id='Consult'>Consultatie-uren</h2>
 			<div style="text-align:justify;">
 			<dt id='ma'>maandag</dt> <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
 			<dt id='di'>dinsdag</dt>  <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
@@ -44,10 +44,8 @@
 			<dt id='vr'>vrijdag</dt> <dd>10.00 &hyphen; 11.30 &bull; 17.00 &hyphen; 19.00</dd> <br/>
 			<dt id='za'>zaterdag</dt> <dd>10.00 &hyphen; 11.30</dd> <br/>
 			<dt id='zo'>zondag</dt> <dd>&hyphen;</dd> <br/><br/>
-							<dd style="font-weight:300" id='TelAfsp'>Of op afspraak <b>(telefonisch)</b></dd></div>
-							
-							
-		</div>
+			<dd style="font-weight:300" id='TelAfsp'>Of op afspraak <b>(telefonisch)</b></dd></div>
+        </div>-->
 		<div class="halfpage" style="text-align:left;">
 			<h2 id='contactGegevens'>Contactgegevens</h2>
 			<dt id='adres'>Adres</dt>
@@ -61,21 +59,20 @@
 <div class="footer">created by Mathias De Pelsmaeker &bull; 2016</div>
 </body>
     <script>
-    var aboutAnick='Depuis 1991 je suis vétérinaire diplômée. D’origine née à Gand, j’ai déménagé à Renaix où j’ai commencé une pratique pour les animaux de compagnie en 1992. Je m’occupe du contrôle annuel de votre animal, mais vous pouvez me contacter aussi en cas de maladie, pour les examens radiographiques et pour la chirurgie de base. La plupart du temps je suis disponible pendant mes heures de consultation; mais si vous la désirez, je peux vous recevoir sur rendez-vous. ';
-        var Ma = 'Lundi';
+    var aboutAnick='Depuis 1991 je suis vétérinaire diplômée. D’origine née à Gand, j’ai déménagé à Renaix où j’ai commencé une pratique pour les animaux de compagnie en 1992. Je m’occupe du contrôle annuel de votre animal, mais vous pouvez me contacter aussi en cas de maladie, pour les examens radiographiques et pour la chirurgie de base. Je travaille uniquement sur rendez-vous. Vous pouvez me contacter par téléphone (055/20 70 80) ou par e-mail.';
+        /*var Ma = 'Lundi';
         var Di = 'Mardi';
         var Wo = 'Mercredi';
         var Do = 'Jeudi';
         var Vr = 'Vendredi';
         var Za = 'Samedi';
-        var Zo = 'Dimanche';
+        var Zo = 'Dimanche';*/
         var doText = 'sur rendez-vous';
-        var telAfsp = 'Ou sur rendez-vous : 055/20 70 80';
+        var telAfsp = 'Seulement par rendez-vous : 055/20 70 80';
         var consult = 'Heures de consultation ';
         var contactGeg = 'Détails de contact ';
         var adres = 'Adresse';
         var straat = 'Bvd Camille Lemonnier  &bull; 59 &bull; 9600 Renaix';
-        
         $('#switchLang').on('click',switchLang);
         function switchLang(){
             var Temp = $('#aboutText').html();
